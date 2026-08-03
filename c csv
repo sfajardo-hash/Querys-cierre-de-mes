@@ -1,0 +1,26 @@
+SELECT *
+FROM `quipumarket-c956f.Data.Cartera`
+ORDER BY
+  CASE 
+    WHEN base = 'v1' THEN 1
+    WHEN base = 'v2' THEN 2
+    WHEN base = 'v3' THEN 3
+    WHEN base = 'v4' THEN 4
+    WHEN base = 'v5' THEN 5
+    WHEN base = 'v6' THEN 6
+    WHEN base = 'v7' THEN 7
+    WHEN base = 'v8' THEN 8
+    WHEN base = 'v9' THEN 9
+    WHEN base = 'v10' THEN 10
+    WHEN base = 'v11' THEN 11
+    WHEN base = 'v12' THEN 12
+    WHEN base = 'v13' THEN 13
+    WHEN base = 'v14' THEN 14
+    WHEN base = 'v15' THEN 15
+    WHEN base = 'v16' THEN 16
+    WHEN base = 'v17' THEN 17
+    WHEN base = 'v18' THEN 18
+    WHEN base = 'v19' THEN 19
+    WHEN base = 'v20' THEN 20
+  END,
+  orden ASC
