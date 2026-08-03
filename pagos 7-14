@@ -1,0 +1,16 @@
+SELECT *
+FROM `quipumarket-c956f.Data.Pagos`
+WHERE base IN ('v7', 'v8', 'v9', 'v10', 'v11', 'v12', 'v13', 'v14')
+ORDER BY
+    CASE 
+      WHEN base = 'v7' THEN 1
+      WHEN base = 'v8' THEN 2
+      WHEN base = 'v9' THEN 3
+      WHEN base = 'v10' THEN 4
+      WHEN base = 'v11' THEN 5
+      WHEN base = 'v12' THEN 6
+      WHEN base = 'v13' THEN 7
+      WHEN base = 'v14' THEN 8
+    END,
+  orden ASC,
+  numero_cuota ASC
