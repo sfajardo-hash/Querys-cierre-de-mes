@@ -1,0 +1,58 @@
+SELECT
+  base,
+  codigo_credito,
+  id_cliente,
+  fecha_desembolso,
+  numero_cuota,
+  plazo,
+  ti_mensual,
+  monto_de_credito,
+  fuente_de_financiacion,
+  fondo_de_deuda,
+  fecha_t_pago,
+  cuota_t,
+  cuota_a_pagar,
+  digitalizacion_mensual,
+  fecha_pago,
+  valor_pagado,
+  saldo_capital,
+  abono_k,
+  abono_int,
+  fecha_de_pago_sig,
+  valor_pagado_sig_cuota,
+  abono_fee,
+  saldo_p_cuota,
+  pago_cuota,
+  dias_retraso,
+  gastos_cobranza,
+  int_mora,
+  monto_int_mora,
+  edad_mora_cuota,
+  fecha_reclamacion,
+  valor_reclamacion,
+  fee_reclamacion,
+  intereses_reclamacion,
+  abono_k_reclamacion,
+  fecha_retanqueo,
+  valor_retanqueo,
+  fee_retanqueo,
+  intereses_retanqueo,
+  abono_k_retanqueo,
+  dias_cosecha,
+  estatus_credito,
+  pago_total_credito,
+  saldo_k_r_r,
+  condonaciones
+FROM `quipumarket-c956f.Data.Pagos`
+WHERE base IN ('v1', 'v2', 'v3', 'v4', 'v5', 'v6')
+ORDER BY
+  CASE 
+    WHEN base = 'v1' THEN 1
+    WHEN base = 'v2' THEN 2
+    WHEN base = 'v3' THEN 3
+    WHEN base = 'v4' THEN 4
+    WHEN base = 'v5' THEN 5
+    WHEN base = 'v6' THEN 6
+  END,
+  orden ASC,
+  numero_cuota ASC
