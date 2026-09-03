@@ -44,7 +44,7 @@ SELECT
   saldo_k_r_r,
   condonaciones
 FROM `quipumarket-c956f.Data.Pagos`
-WHERE base IN ('v15', 'v16', 'v17', 'v18', 'v19', 'v20')
+WHERE base IN ('v15', 'v16', 'v17', 'v18', 'v19', 'v20', 'v21')
 ORDER BY
   CASE 
     WHEN base = 'v15' THEN 1
@@ -53,6 +53,7 @@ ORDER BY
     WHEN base = 'v18' THEN 4
     WHEN base = 'v19' THEN 5
     WHEN base = 'v20' THEN 6
+    WHEN base = 'v21' THEN 7
   END,
   orden ASC,
   numero_cuota ASC
