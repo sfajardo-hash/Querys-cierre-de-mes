@@ -10,6 +10,7 @@ ORDER BY
       WHEN base = 'v19' THEN 5
       WHEN base = 'v20' THEN 6
       WHEN base = 'v21' THEN 7
+      WHEN base = 'v22' THEN 8
     END,
   orden ASC,
   numero_cuota ASC
