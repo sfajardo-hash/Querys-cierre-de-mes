@@ -1,6 +1,6 @@
 SELECT *
 FROM `quipumarket-c956f.Data.Pagos`
-WHERE base IN ('v15', 'v16', 'v17', 'v18', 'v19', 'v20', 'v21')
+WHERE base IN ('v15', 'v16', 'v17', 'v18', 'v19', 'v20', 'v21','v22')
 ORDER BY
     CASE 
       WHEN base = 'v15' THEN 1
