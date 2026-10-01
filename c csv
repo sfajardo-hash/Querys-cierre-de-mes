@@ -22,5 +22,7 @@ ORDER BY
     WHEN base = 'v18' THEN 18
     WHEN base = 'v19' THEN 19
     WHEN base = 'v20' THEN 20
+    WHEN base = 'v21' THEN 21
+    WHEN base = 'v22' THEN 22
   END,
   orden ASC
